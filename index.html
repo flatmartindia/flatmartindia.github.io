@@ -1,18 +1,288 @@
 <!DOCTYPE html>
-
 <html>
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>my-first-website</title>
-  <LINK href="styles.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet'>
+
+
+<style>
+	* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Oxygen, sans-serif;
+  font-size: 18px;
+  background: #f2f4f8;
+--bg-color: #ffd861;
+  --bg-color-light: black;
+  --text-color-hover: black;
+  --box-shadow-color: rgba(255, 215, 97, 0.48);
+}
+
+
+
+
+
+a:link, a:visited {
+  background-color: white;
+  text-decoration: none;  
+}
+
+
+
+/* Style the counter cards toffee F2EDD7*/
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  text-align: center;
+  background-color: #5F5F60 ;
+  color: #E0E722;
+  
+border-radius: 18px;
+}
+
+
+.card:hover {
+  transform: translateY(-20px);
+  transition: 0.4s ease-out;
+    background: var(--bg-color-light);
+  
+}
+
+.card:hover ~ .card {
+  position: relative;
+  left: 50px;
+  transition: 0.4s ease-out;
+   background: var(--bg-color-light);
+}
+
+
+.fa:hover{
+-webkit-transform: rotate(360deg);
+           -webkit-transition: -webkit-transform 0.25s ease-in-out;
+}
+
+.fa {
+font-size:70px;
+}
+
+
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 15px;
+}
+
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
+</style>
 </head>
+<body onload="myFunction()"><center>
 
-<body>
+<img width="60%" height="50%" src="topbanner.png">
 
-<img src="https://octodex.github.com/images/daftpunktocat-thomas.gif" id="octocat" alt="octocat-gif" />
+<div class="header">
+<h3>No   <span
+     class="txt-rotate"
+     data-period="20"
+     data-rotate='[ "Brokerage", "Paid Listings", "Promotion Plans" ]'></span>
+</h3>
+</div>
 
-<!-- Change this code here by copy and pasting your template on line 15 -->
-<p>Welcome to your first GitHub Pages website!</p>
+
+	
+<br>
+
+
+  <table width="60%">
+  <tr>
+  <td width="25%">
+    <div class="card">
+	<a href="https://sites.google.com/view/flatmart/Post-Property">
+      <p><i class="fa fa-money "></i></p>
+      <h3>&nbsp;</h3>
+      <p>Post Property</p>
+	  </a>
+    </div>
+  </div>
+  </td>
+
+<td width="25%">    <div class="card">
+	<a href="https://sites.google.com/view/flatmart/rent">
+      <p><i class="fa fa-check"></i></p>
+      <h3>&nbsp;</h3>
+      <p>Rent a Flat</p>
+    </div>
+  </div>
+  </td>
+  
+    <td width="25%"><div class="card">
+	<a href="https://sites.google.com/view/flatmart/Sharing">
+      <p><i class="fa fa-users"></i></p>
+      <h3>&nbsp;</h3>
+      <p>Flat for Sharing</p></a>
+    </div>
+  </div>
+  
+  </td>
+   <td width="25%"> <div class="card">
+	<a href="https://sites.google.com/view/flatmart/sell">
+      <p><i class="fa fa-search"></i></p>
+      <h3>&nbsp;</h3>
+      <p>Buy Flat</p>
+	  </a>
+    </div>
+  </div>
+</div>
+</td>
+</tr>
+
+
+<br>
+<tr>
+<td width="25%">
+<div class="row">
+
+    <div class="card">
+	<a href="https://sites.google.com/view/flatmart/TypicalRent">
+      <p><i class="fa fa-check-square-o"></i></p>
+      <h3>&nbsp;</h3>
+      <p>Typical Rent</p>
+	  </a>
+    </div>
+  </div>
+</td>
+<td width="25%">
+
+    <div class="card">
+	<a href="https://sites.google.com/view/flatmart/Project-Reviews">
+      <p><i class="fa fa-comments"></i></p>
+      <h3>&nbsp;</h3>
+      <p>Project Reviews</p>
+    </div>
+  </div>
+  
+</td>
+<td width="25%">
+    <div class="card">
+	<a href="https://sites.google.com/view/flatmart/home">
+      <p><i class="fa fa-newspaper-o"></i></p>
+      <h3>&nbsp;</h3>
+      <p>News</p></a>
+    </div>
+  </div>
+  
+</td>
+<td width="25%">
+    <div class="card">
+	<a href="https://sites.google.com/view/flatmart/home">
+      <p><i class="fa fa-comment"></i></p>
+      <h3>&nbsp;</h3>
+      <p>Feedback</p>
+	  </a>
+    </div>
+  </div>
+  </td>
+  </tr>
+  
+  </table>
+</center>
+<!--
+<div class="column">
+    <div class="card">
+	<a href="https://play.google.com/store/apps/details?id=com.smart_apps1909.NoBrokerage">
+      <p><i class="fa fa-search"></i></p>
+      <h3>&nbsp;</h3>
+      <p>FlatMart App</p>
+	  </a>
+    </div>
+  </div>
+</div>
+	-->
+<script type="text/javascript">
+
+
+ var TxtRotate = function(el, toRotate, period) {
+  this.toRotate = toRotate;
+  this.el = el;
+  this.loopNum = 0;
+  this.period = parseInt(period, 10) || 2000;
+  this.txt = '';
+  this.tick();
+  this.isDeleting = false;
+};
+
+TxtRotate.prototype.tick = function() {
+  var i = this.loopNum % this.toRotate.length;
+  var fullTxt = this.toRotate[i];
+
+  if (this.isDeleting) {
+    this.txt = fullTxt.substring(0, this.txt.length - 1);
+  } else {
+    this.txt = fullTxt.substring(0, this.txt.length + 1);
+  }
+
+  this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+  var that = this;
+  var delta = 300 - Math.random() * 100;
+
+  if (this.isDeleting) { delta /= 2; }
+
+  if (!this.isDeleting && this.txt === fullTxt) {
+    delta = this.period;
+    this.isDeleting = true;
+  } else if (this.isDeleting && this.txt === '') {
+    this.isDeleting = false;
+    this.loopNum++;
+    delta = 500;
+  }
+
+  setTimeout(function() {
+    that.tick();
+  }, delta);
+};
+
+window.onload = function() {
+  var elements = document.getElementsByClassName('txt-rotate');
+  for (var i=0; i<elements.length; i++) {
+    var toRotate = elements[i].getAttribute('data-rotate');
+    var period = elements[i].getAttribute('data-period');
+    if (toRotate) {
+      new TxtRotate(elements[i], JSON.parse(toRotate), period);
+    }
+  }
+  // INJECT CSS
+  var css = document.createElement("style");
+  css.type = "text/css";
+  css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+  document.body.appendChild(css);
+};
+</script>
+
 
 </body>
+
+
+
 </html>
